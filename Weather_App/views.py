@@ -4,7 +4,7 @@ from pprint import pprint
 
 # Create your views here.
 def weather(request):
-    url = "http://127.0.0.1:8000/RestApi/?search={}&"
+    url = "http://127.0.0.1:8000/RestApiRestApi/?search={}&"
     headers = {'Authorization': 'Token 5d27228a4a22bb7125dcf2b5fe2df020c424c040'}
     city = request.GET.get('city')
     r = requests.get(url.format(city),headers=headers).json()
