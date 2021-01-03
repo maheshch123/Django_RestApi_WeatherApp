@@ -10,7 +10,7 @@ router.register('RestApi',ModelViewSet, basename='RestApi')
 
 urlpatterns = [
 
-        path('',include(router.urls)),
+        path('RestApi',include(router.urls)),
                  
         ]
  
