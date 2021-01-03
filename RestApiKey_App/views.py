@@ -59,4 +59,4 @@ def register(request):
 
 def logout(request):
     auth.logout(request)
-    return redirect('/Home')
+    return redirect('/')
