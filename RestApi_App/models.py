@@ -8,11 +8,18 @@ from rest_framework.authtoken.models import Token
 from django.conf import settings
 
 # Create your models here.
+DESCRIPTION = (
+        (0, "Sunny"),
+        (1, "Rainy"),
+        (2, "Cloudy"),
+        (3, "Snow"),
+        (5, "Freezing")
+)
 
 class weather(models.Model):
     City = models.CharField(max_length=100)
     Temperature = models.IntegerField(default=0)
-    Description = models.CharField(max_length=100)
+    Description = models.IntegerField(choices=DESCRIPTION, default=0)
     Icon = models.ImageField(upload_to='icon_pics', null=True, blank=True)
     Country = models.CharField(max_length=100)
 
