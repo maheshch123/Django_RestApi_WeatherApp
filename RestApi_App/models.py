@@ -13,7 +13,8 @@ DESCRIPTION = (
         (1, "Rainy"),
         (2, "Cloudy"),
         (3, "Snow"),
-        (5, "Freezing")
+        (5, "Freezing"),
+        (6, "Broken clouds")
 )
 
 class weather(models.Model):
